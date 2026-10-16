@@ -131,8 +131,8 @@ def main() -> int:
     parser.add_argument("--init-silencieux", action="store_true", help="marque tout comme vu sans mail")
     args = parser.parse_args()
 
-    prix_min = float(os.environ.get("PRIX_MIN") or 350)
-    prix_max = float(os.environ.get("PRIX_MAX") or 500)
+    prix_min = float(os.environ.get("PRIX_MIN") or 300)
+    prix_max = float(os.environ.get("PRIX_MAX") or 520)
 
     try:
         if args.test_mail:

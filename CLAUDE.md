@@ -1,7 +1,7 @@
 # AlerteLogement
 
 Script qui surveille les locations de **Frances Immobilier** et envoie un e-mail dès qu'un logement
-dont le loyer est **compris entre 350 € et 500 €** (bornes incluses) apparaît. Il tourne 24h/24 via
+dont le loyer est **compris entre 300 € et 520 €** (bornes incluses) apparaît. Il tourne 24h/24 via
 **GitHub Actions** (dépôt **public**, donc minutes gratuites et illimitées).
 
 ## Objectif
@@ -83,8 +83,8 @@ sur GitHub Actions, elles sont injectées par le workflow depuis les **Secrets**
 Les valeurs non sensibles (`PRIX_MIN`, `PRIX_MAX`, `SMTP_HOST`, `SMTP_PORT`) ont des valeurs par défaut dans le code.
 
 ```
-PRIX_MIN=350
-PRIX_MAX=500
+PRIX_MIN=300
+PRIX_MAX=520
 
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
